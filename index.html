@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Budilnik</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="top"></div>
+
+        <div class="section">
+            <div class="left">
+                <ion-icon onclick="power()" name="power"></ion-icon>
+            </div>
+
+            <div class="center" id="center">
+                <div class="clockBox" id="clockBox">
+                    <h1>12 <span>:</span> 58</h1>
+                </div>
+                <div class="alertBox" id="alertBox">
+                    <div class="crossBox">❌</div>
+                    <div class="timeBox">
+                        <select id="alarmHour"></select>
+                        <select id="alarmMins"></select>
+                        <select id="ampm">
+                            <option value="AM">AM</option>
+                            <option value="PM">PM</option>
+                        </select>
+                    </div>
+                    <div class="checkBox">✅</div>
+                </div>
+            </div>
+
+            <div class="right" id="right">
+                <ion-icon name="alarm" id="alarm" onclick="alarmOne()"></ion-icon>
+                <ion-icon name="sunny" id="sun" style="margin-top: 10px; margin-bottom: 10px;"  onclick="sun()"></ion-icon>
+                <p>PM</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="foot"></div>
+            <div class="foot2"></div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
