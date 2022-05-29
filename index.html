@@ -18,27 +18,27 @@
 
             <div class="center" id="center">
                 <div class="clockBox" id="clockBox">
-                    <!-- <h1 id="clockText"><span>:</span></h1> -->
                     <h1 id="clockText"></h1>
                 </div>
                 <div class="alertBox" id="alertBox">
-                    <div class="crossBox">❌</div>
+                    <div class="crossBox" onclick='alarmClear()'>❌</div>
                     <div class="timeBox">
                         <select id="alarmHour"></select>
                         <select id="alarmMins"></select>
+                        <select id="alarmSec"></select>
                         <select id="ampm">
                             <option value="AM">AM</option>
                             <option value="PM">PM</option>
                         </select>
                     </div>
-                    <div class="checkBox">✅</div>
+                    <div class="checkBox" onclick='alarmSet()'>✅</div>
                 </div>
             </div>
 
             <div class="right" id="right">
                 <ion-icon name="alarm" id="alarm" onclick="alarmOne()"></ion-icon>
                 <ion-icon name="sunny" id="sun" style="margin-top: 10px; margin-bottom: 10px;"  onclick="sun()"></ion-icon>
-                <p>PM</p>
+                <p id="ampmText"></p>
             </div>
         </div>
 
